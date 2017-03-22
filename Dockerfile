@@ -10,5 +10,5 @@ RUN sh /work/install.sh
 
 EXPOSE 9566 9576
 #ENTRYPOINT ["/usr/bin/php","/root/pcm/pcm.php","local"]
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/work/entrypoint.sh"]
 CMD ["local"]
