@@ -8,7 +8,7 @@ apk --update add openssh \
   && echo "root:root" | chpasswd \
   && rm -rf /var/cache/apk/*
 
-
+ssh-keygen -A
 
 
 
