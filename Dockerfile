@@ -9,7 +9,7 @@ COPY entrypoint.sh /
 
 EXPOSE 9566 9576
 #ENTRYPOINT ["/usr/bin/php","/root/pcm/pcm.php","local"]
-ENTRYPOINT ["entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
 CMD ["local"]
 
 RUN apk --update add openssh \
