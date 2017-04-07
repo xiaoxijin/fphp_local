@@ -1,6 +1,4 @@
 #!/bin/sh
-mkdir -p /work
-chmod 777 -R /work
 
 apk --update add openssh \
   && sed -i s/#PermitRootLogin.*/PermitRootLogin\ yes/ /etc/ssh/sshd_config \
