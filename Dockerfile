@@ -3,6 +3,6 @@ Maintainer Xijin Xiao (http://github.com/xiaoxijin/)
 
 
 ADD install.sh $WORK_DIR
-ADD entrypoint.sh $WORK_DIR
+COPY entrypoint.sh /
 RUN sh ${WORK_DIR}install.sh
 CMD ["local"]
